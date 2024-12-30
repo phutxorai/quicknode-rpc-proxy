@@ -1,4 +1,4 @@
-name = "rpc-proxy" # todo
+name = "quicknode-rpc-proxy" # todo
 main = "./src/index.ts"
 compatibility_date = "2022-05-03"
 compatibility_flags = ["streams_enable_constructors"]
