@@ -43,7 +43,7 @@ export default {
 
 		const { pathname, search } = new URL(request.url)
 		const payload = await request.text();
-		const proxyRequest = new Request(`https://misty-dark-patron.solana-mainnet.quiknode.pro/${env.QUICKNODE_API_KEY}/${pathname}${search ? `&${search.slice(1)}` : ''}`, {
+		const proxyRequest = new Request(`https://misty-dark-patron.solana-mainnet.quiknode.pro/${env.QUICKNODE_API_KEY}/`, {
 			method: request.method,
 			body: payload || null,
 			headers: {
