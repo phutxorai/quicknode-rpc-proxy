@@ -37,7 +37,7 @@ export default {
 		const upgradeHeader = request.headers.get('Upgrade')
 
 		if (upgradeHeader || upgradeHeader === 'websocket') {
-			return await fetch(`https://misty-dark-patron.solana-mainnet.quiknode.pro/${env.QUICKNODE_API_KEY}`, request)
+			return await fetch(`https://misty-dark-patron.solana-mainnet.quiknode.pro/${env.QUICKNODE_API_KEY}/`, request)
 		}
 
 
